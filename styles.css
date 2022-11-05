@@ -2,3 +2,24 @@
 #results {
   display: none;
 }
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.grid-item {
+  height: 50px;
+  widht: 100%;
+  background: blue;
+}

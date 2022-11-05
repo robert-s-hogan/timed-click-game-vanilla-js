@@ -1,6 +1,6 @@
-const intro = document.getElementById("#intro");
-const game = document.getElementById("#game");
-const results = document.getElementById("#results");
+const intro = document.getElementById("intro");
+const game = document.getElementById("game");
+const results = document.getElementById("results");
 
 function startGame() {
   intro.style.display = "none";
@@ -20,4 +20,14 @@ function showResults() {
   results.style.display = "block";
 }
 
-const grid = document.getElementById("#grid");
+const grid = document.getElementById("grid");
+
+function makeGridItems(items) {
+  for (c = 0; c < items; c++) {
+    const gridItem = document.createElement("div");
+    gridItem.classList.add("grid-item");
+    grid.appendChild(gridItem);
+  }
+}
+
+makeGridItems(50);
